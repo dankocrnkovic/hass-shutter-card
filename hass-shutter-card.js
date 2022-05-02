@@ -42,12 +42,9 @@ class ShutterCard extends HTMLElement {
         shutter.className = 'sc-shutter';
         shutter.dataset.shutter = entityId;
         shutter.innerHTML = `
-          <div class="sc-shutter-top" ` + (titlePosition == 'bottom' ? 'style="display:none;"' : '') + `>
-            <div class="sc-shutter-label">
-            
-            </div>
-            <div class="sc-shutter-position">
-            
+          <div class="sc-shutter-top">
+            <div class="sc-shutter-padding">
+              &nbsp;
             </div>
           </div>
           <div class="sc-shutter-middle" style="flex-direction: ` + (buttonsPosition == 'right' ? 'row-reverse': 'row') + `;">
@@ -63,12 +60,9 @@ class ShutterCard extends HTMLElement {
               </div>
             </div>
           </div>
-          <div class="sc-shutter-bottom" ` + (titlePosition != 'bottom' ? 'style="display:none;"' : '') + `>
-            <div class="sc-shutter-label">
-            
-            </div>
-            <div class="sc-shutter-position">
-            
+          <div class="sc-shutter-bottom">
+            <div class="sc-shutter-padding">
+              &nbsp;
             </div>
           </div>
         `;
@@ -181,6 +175,7 @@ class ShutterCard extends HTMLElement {
           .sc-shutter-bottom { text-align: center; margin-top: 1rem; }
             .sc-shutter-label { display: inline-block; font-size: 20px; vertical-align: middle; }
             .sc-shutter-position { display: inline-block; vertical-align: middle; padding: 0 6px; margin-left: 1rem; border-radius: 2px; background-color: var(--secondary-background-color); }
+            .sc-shutter-padding { display: inline-block; padding: 5px; }
       `;
     
       this.card.appendChild(allShutters);
