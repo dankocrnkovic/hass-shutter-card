@@ -175,7 +175,7 @@ class ShutterCard extends HTMLElement {
           .sc-shutter-bottom { text-align: center; margin-top: 1rem; }
             .sc-shutter-label { display: inline-block; font-size: 20px; vertical-align: middle; }
             .sc-shutter-position { display: inline-block; vertical-align: middle; padding: 0 6px; margin-left: 1rem; border-radius: 2px; background-color: var(--secondary-background-color); }
-            .sc-shutter-padding { display: inline-block; padding: 5px; }
+            .sc-shutter-padding { display: inline-block; padding: 0px; }
       `;
     
       this.card.appendChild(allShutters);
